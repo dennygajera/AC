@@ -1,0 +1,6 @@
+framework module Pods_American_ChangerTests {
+  umbrella header "Pods-American ChangerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
