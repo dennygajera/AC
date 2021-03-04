@@ -67,7 +67,7 @@ enum Identifier: String {
     // Main Storyboard
     case ConfirmationPopUp = "ConfirmationPopUpVC"
     case ViewController = "ViewController"
-    case signup = "SignupVC"
+    case signup = "SignUpVC"
     case login = "LoginVC"
     case home = "HomeVC"
     case forgotPassword = "ForgotPasswordVC"

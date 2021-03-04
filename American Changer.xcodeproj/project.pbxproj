@@ -12,7 +12,6 @@
 		E2DD182A181451990FC959EC /* Pods_American_Changer_American_ChangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69092A823DD00C8B87D416C9 /* Pods_American_Changer_American_ChangerUITests.framework */; };
 		F435E71525F014320083ABF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E71425F014320083ABF2 /* AppDelegate.swift */; };
 		F435E71725F014320083ABF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E71625F014320083ABF2 /* SceneDelegate.swift */; };
-		F435E71925F014320083ABF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E71825F014320083ABF2 /* ViewController.swift */; };
 		F435E71C25F014320083ABF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F435E71A25F014320083ABF2 /* Main.storyboard */; };
 		F435E71E25F014350083ABF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F435E71D25F014350083ABF2 /* Assets.xcassets */; };
 		F435E72125F014350083ABF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F435E71F25F014350083ABF2 /* LaunchScreen.storyboard */; };
@@ -62,6 +61,10 @@
 		F435E82625F015C50083ABF2 /* heavy_dock11.otf in Resources */ = {isa = PBXBuildFile; fileRef = F435E7EA25F015C40083ABF2 /* heavy_dock11.otf */; };
 		F435E82725F015C50083ABF2 /* AppPrefsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E7EB25F015C40083ABF2 /* AppPrefsManager.swift */; };
 		F435E82925F015C50083ABF2 /* SHSnackBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E7EF25F015C40083ABF2 /* SHSnackBarView.swift */; };
+		F4DF6FA125F09ABD00F6F50D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF6FA025F09ABD00F6F50D /* LoginVC.swift */; };
+		F4DF6FAC25F09FC500F6F50D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF6FAB25F09FC500F6F50D /* SignUpVC.swift */; };
+		F4DF6FB425F0AE8000F6F50D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF6FB325F0AE8000F6F50D /* LoginViewModel.swift */; };
+		F4DF6FB925F0B37500F6F50D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF6FB825F0B37500F6F50D /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +97,6 @@
 		F435E71125F014320083ABF2 /* American Changer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "American Changer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F435E71425F014320083ABF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F435E71625F014320083ABF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F435E71825F014320083ABF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F435E71B25F014320083ABF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F435E71D25F014350083ABF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F435E72025F014350083ABF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -157,6 +159,10 @@
 		F435E7ED25F015C40083ABF2 /* SHSnackBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSnackBarView.h; sourceTree = "<group>"; };
 		F435E7EE25F015C40083ABF2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F435E7EF25F015C40083ABF2 /* SHSnackBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHSnackBarView.swift; sourceTree = "<group>"; };
+		F4DF6FA025F09ABD00F6F50D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F4DF6FAB25F09FC500F6F50D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		F4DF6FB325F0AE8000F6F50D /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F4DF6FB825F0B37500F6F50D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +278,8 @@
 		F435E7A025F015840083ABF2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F4DF6FB825F0B37500F6F50D /* SignUpViewModel.swift */,
+				F4DF6FB325F0AE8000F6F50D /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -279,7 +287,8 @@
 		F435E7A525F0159C0083ABF2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F435E71825F014320083ABF2 /* ViewController.swift */,
+				F4DF6FA025F09ABD00F6F50D /* LoginVC.swift */,
+				F4DF6FAB25F09FC500F6F50D /* SignUpVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -705,9 +714,10 @@
 				F435E80F25F015C40083ABF2 /* Gradient.+.swift in Sources */,
 				F435E80425F015C40083ABF2 /* CALayerExtension.swift in Sources */,
 				F435E7FA25F015C40083ABF2 /* BaseVC.swift in Sources */,
-				F435E71925F014320083ABF2 /* ViewController.swift in Sources */,
 				F435E81025F015C50083ABF2 /* UITextField+.swift in Sources */,
+				F4DF6FB925F0B37500F6F50D /* SignUpViewModel.swift in Sources */,
 				F435E80925F015C40083ABF2 /* Appdelegate+.swift in Sources */,
+				F4DF6FB425F0AE8000F6F50D /* LoginViewModel.swift in Sources */,
 				F435E71525F014320083ABF2 /* AppDelegate.swift in Sources */,
 				F435E81525F015C50083ABF2 /* NSCalendar+Timepiece.swift in Sources */,
 				F435E80825F015C40083ABF2 /* UIView+.swift in Sources */,
@@ -719,12 +729,14 @@
 				F435E82925F015C50083ABF2 /* SHSnackBarView.swift in Sources */,
 				F435E7FB25F015C40083ABF2 /* JsonSerializer.swift in Sources */,
 				F435E81325F015C50083ABF2 /* UIColor+.swift in Sources */,
+				F4DF6FAC25F09FC500F6F50D /* SignUpVC.swift in Sources */,
 				F435E81F25F015C50083ABF2 /* Display+.swift in Sources */,
 				F435E80B25F015C40083ABF2 /* UIVIewController+.swift in Sources */,
 				F435E81625F015C50083ABF2 /* Int+Timepiece.swift in Sources */,
 				F435E7FE25F015C40083ABF2 /* RESideMenu.m in Sources */,
 				F435E7FD25F015C40083ABF2 /* UIViewController+RESideMenu.m in Sources */,
 				F435E82225F015C50083ABF2 /* Utility.swift in Sources */,
+				F4DF6FA125F09ABD00F6F50D /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,7 +923,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.calendar.American-Changer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -931,7 +943,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.calendar.American-Changer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
