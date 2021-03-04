@@ -69,8 +69,9 @@ enum Identifier: String {
     case ViewController = "ViewController"
     case signup = "SignUpVC"
     case login = "LoginVC"
+    case forgotPassword = "ForgotVC"
+    
     case home = "HomeVC"
-    case forgotPassword = "ForgotPasswordVC"
     case sendOtp = "SendOTPVC"
     case side = "SideVC"
     case PPVHistory = "PPVHistoryVC"

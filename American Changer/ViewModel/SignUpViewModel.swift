@@ -61,7 +61,7 @@ extension SignUpViewModel{
             SnackBar.show(strMessage: ErrorMesssages.EmptyConfirmPassword, type: .negative)
             return false
         }   else if password.value == conpassword.value {
-            SnackBar.show(strMessage: ErrorMesssages.PasswordMatch, type: .negative)
+            SnackBar.show(strMessage: ErrorMesssages.PasswordMatched, type: .negative)
             return false
         }  else {
             return true

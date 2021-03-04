@@ -55,7 +55,9 @@ class SignUpVC: UIViewController {
     
 
     @IBAction func btnCreateAccountClick(_ sender: Any) {
-        
+        if self.viewModel.isFieldValidation() {
+            
+        }
     }
     
     @IBAction func btnTermsClick(_ sender: UIButton) {

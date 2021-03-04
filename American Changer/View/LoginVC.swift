@@ -39,7 +39,8 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func btnForgotPasswordClick(_ sender: Any) {
-        
+        let forgot = Storyboard.main.storyboard().instantiateViewController(withIdentifier: Identifier.forgotPassword.rawValue) as! ForgotVC
+        self.navigationController?.pushViewController(forgot, animated: true)
     }
     
     @IBAction func btnCreateAccountClick(_ sender: Any) {

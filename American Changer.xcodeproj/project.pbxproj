@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E6D8D287090509A2593F9E7 /* Pods_American_ChangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C741E5F8C5F5EA51AB76D0B /* Pods_American_ChangerTests.framework */; };
+		88A408D525F0CD810023A34D /* ForgotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A408D425F0CD810023A34D /* ForgotVC.swift */; };
+		88A408DA25F0CF9D0023A34D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A408D925F0CF9D0023A34D /* HomeVC.swift */; };
 		C22AACFF1A5A5504510BEBD1 /* Pods_American_Changer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B5C761EB9105207D8CDC84 /* Pods_American_Changer.framework */; };
 		E2DD182A181451990FC959EC /* Pods_American_Changer_American_ChangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69092A823DD00C8B87D416C9 /* Pods_American_Changer_American_ChangerUITests.framework */; };
 		F435E71525F014320083ABF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E71425F014320083ABF2 /* AppDelegate.swift */; };
@@ -92,6 +94,8 @@
 		7064F891B97E708C4115B4F6 /* Pods-American Changer-American ChangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-American Changer-American ChangerUITests.debug.xcconfig"; path = "Target Support Files/Pods-American Changer-American ChangerUITests/Pods-American Changer-American ChangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76FBEB9FA21E86773E62DFAE /* Pods-American ChangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-American ChangerTests.debug.xcconfig"; path = "Target Support Files/Pods-American ChangerTests/Pods-American ChangerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		84BDAA62950028E9B7F05F1A /* Pods-American Changer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-American Changer.release.xcconfig"; path = "Target Support Files/Pods-American Changer/Pods-American Changer.release.xcconfig"; sourceTree = "<group>"; };
+		88A408D425F0CD810023A34D /* ForgotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotVC.swift; sourceTree = "<group>"; };
+		88A408D925F0CF9D0023A34D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B0B5C761EB9105207D8CDC84 /* Pods_American_Changer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_American_Changer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B198CDED77F705F013CE81D0 /* Pods-American ChangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-American ChangerTests.release.xcconfig"; path = "Target Support Files/Pods-American ChangerTests/Pods-American ChangerTests.release.xcconfig"; sourceTree = "<group>"; };
 		F435E71125F014320083ABF2 /* American Changer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "American Changer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,7 +235,6 @@
 				F435E7A625F015C30083ABF2 /* Helper Classes */,
 				F435E7A525F0159C0083ABF2 /* View */,
 				F435E7A025F015840083ABF2 /* ViewModel */,
-				F435E78725F015670083ABF2 /* Model */,
 				F435E78625F015670083ABF2 /* UI */,
 				F435E71425F014320083ABF2 /* AppDelegate.swift */,
 				F435E71625F014320083ABF2 /* SceneDelegate.swift */,
@@ -268,13 +271,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		F435E78725F015670083ABF2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		F435E7A025F015840083ABF2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +285,8 @@
 			children = (
 				F4DF6FA025F09ABD00F6F50D /* LoginVC.swift */,
 				F4DF6FAB25F09FC500F6F50D /* SignUpVC.swift */,
+				88A408D425F0CD810023A34D /* ForgotVC.swift */,
+				88A408D925F0CF9D0023A34D /* HomeVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -693,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F435E82025F015C50083ABF2 /* ProgressCircularView.swift in Sources */,
+				88A408D525F0CD810023A34D /* ForgotVC.swift in Sources */,
 				F435E81925F015C50083ABF2 /* NSDate+Timepiece.swift in Sources */,
 				F435E7F925F015C40083ABF2 /* Connection.swift in Sources */,
 				F435E81225F015C50083ABF2 /* DateHelper.swift in Sources */,
@@ -722,6 +721,7 @@
 				F435E81525F015C50083ABF2 /* NSCalendar+Timepiece.swift in Sources */,
 				F435E80825F015C40083ABF2 /* UIView+.swift in Sources */,
 				F435E80D25F015C40083ABF2 /* Encodable+Dictionary.swift in Sources */,
+				88A408DA25F0CF9D0023A34D /* HomeVC.swift in Sources */,
 				F435E71725F014320083ABF2 /* SceneDelegate.swift in Sources */,
 				F435E7F025F015C40083ABF2 /* Constant.swift in Sources */,
 				F435E82125F015C50083ABF2 /* MFBadge.swift in Sources */,
@@ -916,6 +916,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BZJSCGT45G;
 				INFOPLIST_FILE = "American Changer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -936,6 +937,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BZJSCGT45G;
 				INFOPLIST_FILE = "American Changer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
