@@ -65,13 +65,20 @@ struct NotificationType {
 
 enum Identifier: String {
     // Main Storyboard
+    case RightMenu = "RightMenuVC"
+    case RightMenuCell = "RightMenuCell"
+    
     case ConfirmationPopUp = "ConfirmationPopUpVC"
     case ViewController = "ViewController"
     case signup = "SignUpVC"
     case login = "LoginVC"
     case forgotPassword = "ForgotVC"
-    
     case home = "HomeVC"
+    case SelectPackage = "SelectPackageVC"
+    
+    
+    
+    
     case sendOtp = "SendOTPVC"
     case side = "SideVC"
     case PPVHistory = "PPVHistoryVC"

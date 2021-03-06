@@ -6,14 +6,16 @@
 //
 
 import UIKit
-
+import FAPanels
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+//    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+//        self.configSideMenu()
         return true
     }
 
@@ -31,6 +33,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+    func configSideMenu() {
+        let rightMenuVC: RightMenuVC =  Storyboard.main.storyboard().instantiateViewController(withIdentifier: Identifier.RightMenu.rawValue) as! RightMenuVC
+        
+//    if AppPrefsManager.sharedInstance.getUserData() == nil {
+//        let centerVC: LoginVC = Storyboard.main.storyboard().instantiateViewController(withIdentifier: Identifier.Login.rawValue) as! LoginVC
+//        let centerNavVC = UINavigationController(rootViewController: centerVC)
+//        let rootController = FAPanelController()
+//        _ = rootController.center(centerNavVC).left(leftMenuVC)
+//        window?.rootViewController = rootController
+//    } else {
+//                    let centerVC: HomeVC = Storyboard.main.storyboard().instantiateViewController(withIdentifier: Identifier.home.rawValue) as! HomeVC
+//                    let centerNavVC = UINavigationController(rootViewController: centerVC)
+//        let rootController = FAPanelController().center(centerNavVC).right(rightMenuVC)
+//                    window?.rootViewController = rootController
+//                }
+    
+    }
 }
 

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5E6D8D287090509A2593F9E7 /* Pods_American_ChangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C741E5F8C5F5EA51AB76D0B /* Pods_American_ChangerTests.framework */; };
+		8819758825F39FFF0095DE85 /* SelectPackageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8819758725F39FFF0095DE85 /* SelectPackageVC.swift */; };
+		8840FFC125F37319008949CE /* RightMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8840FFBB25F37319008949CE /* RightMenuCell.xib */; };
+		8840FFC425F37319008949CE /* RightMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8840FFBE25F37319008949CE /* RightMenuVC.swift */; };
+		8840FFC525F37319008949CE /* RightMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8840FFBF25F37319008949CE /* RightMenuCell.swift */; };
 		88A408D525F0CD810023A34D /* ForgotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A408D425F0CD810023A34D /* ForgotVC.swift */; };
 		88A408DA25F0CF9D0023A34D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A408D925F0CF9D0023A34D /* HomeVC.swift */; };
 		C22AACFF1A5A5504510BEBD1 /* Pods_American_Changer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B5C761EB9105207D8CDC84 /* Pods_American_Changer.framework */; };
@@ -23,9 +27,6 @@
 		F435E7F925F015C40083ABF2 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E7B225F015C40083ABF2 /* Connection.swift */; };
 		F435E7FA25F015C40083ABF2 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E7B425F015C40083ABF2 /* BaseVC.swift */; };
 		F435E7FB25F015C40083ABF2 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E7B525F015C40083ABF2 /* JsonSerializer.swift */; };
-		F435E7FD25F015C40083ABF2 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F435E7B925F015C40083ABF2 /* UIViewController+RESideMenu.m */; };
-		F435E7FE25F015C40083ABF2 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F435E7BB25F015C40083ABF2 /* RESideMenu.m */; };
-		F435E7FF25F015C40083ABF2 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = F435E7BD25F015C40083ABF2 /* RECommonFunctions.m */; };
 		F435E80025F015C40083ABF2 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E7BE25F015C40083ABF2 /* String+Crypto.swift */; };
 		F435E80425F015C40083ABF2 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E7C425F015C40083ABF2 /* CALayerExtension.swift */; };
 		F435E80525F015C40083ABF2 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E7C525F015C40083ABF2 /* UIImage+Gif.swift */; };
@@ -94,6 +95,10 @@
 		7064F891B97E708C4115B4F6 /* Pods-American Changer-American ChangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-American Changer-American ChangerUITests.debug.xcconfig"; path = "Target Support Files/Pods-American Changer-American ChangerUITests/Pods-American Changer-American ChangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76FBEB9FA21E86773E62DFAE /* Pods-American ChangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-American ChangerTests.debug.xcconfig"; path = "Target Support Files/Pods-American ChangerTests/Pods-American ChangerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		84BDAA62950028E9B7F05F1A /* Pods-American Changer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-American Changer.release.xcconfig"; path = "Target Support Files/Pods-American Changer/Pods-American Changer.release.xcconfig"; sourceTree = "<group>"; };
+		8819758725F39FFF0095DE85 /* SelectPackageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPackageVC.swift; sourceTree = "<group>"; };
+		8840FFBB25F37319008949CE /* RightMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightMenuCell.xib; sourceTree = "<group>"; };
+		8840FFBE25F37319008949CE /* RightMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuVC.swift; sourceTree = "<group>"; };
+		8840FFBF25F37319008949CE /* RightMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuCell.swift; sourceTree = "<group>"; };
 		88A408D425F0CD810023A34D /* ForgotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotVC.swift; sourceTree = "<group>"; };
 		88A408D925F0CF9D0023A34D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B0B5C761EB9105207D8CDC84 /* Pods_American_Changer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_American_Changer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,12 +121,6 @@
 		F435E7B325F015C40083ABF2 /* JsonSerializerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonSerializerSwift.h; sourceTree = "<group>"; };
 		F435E7B425F015C40083ABF2 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		F435E7B525F015C40083ABF2 /* JsonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializer.swift; sourceTree = "<group>"; };
-		F435E7B825F015C40083ABF2 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
-		F435E7B925F015C40083ABF2 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
-		F435E7BA25F015C40083ABF2 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
-		F435E7BB25F015C40083ABF2 /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
-		F435E7BC25F015C40083ABF2 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
-		F435E7BD25F015C40083ABF2 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		F435E7BE25F015C40083ABF2 /* String+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 		F435E7C425F015C40083ABF2 /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		F435E7C525F015C40083ABF2 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
@@ -197,6 +196,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8840FFB925F37319008949CE /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8840FFBB25F37319008949CE /* RightMenuCell.xib */,
+				8840FFBE25F37319008949CE /* RightMenuVC.swift */,
+				8840FFBF25F37319008949CE /* RightMenuCell.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 		96B58616CD8DFDA26AE4F323 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +296,7 @@
 				F4DF6FAB25F09FC500F6F50D /* SignUpVC.swift */,
 				88A408D425F0CD810023A34D /* ForgotVC.swift */,
 				88A408D925F0CF9D0023A34D /* HomeVC.swift */,
+				8819758725F39FFF0095DE85 /* SelectPackageVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,12 +304,12 @@
 		F435E7A625F015C30083ABF2 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8840FFB925F37319008949CE /* SideMenu */,
 				F435E7A725F015C30083ABF2 /* Constant.swift */,
 				F435E7B225F015C40083ABF2 /* Connection.swift */,
 				F435E7B325F015C40083ABF2 /* JsonSerializerSwift.h */,
 				F435E7B425F015C40083ABF2 /* BaseVC.swift */,
 				F435E7B525F015C40083ABF2 /* JsonSerializer.swift */,
-				F435E7B725F015C40083ABF2 /* RESideMenu */,
 				F435E7BE25F015C40083ABF2 /* String+Crypto.swift */,
 				F435E7C325F015C40083ABF2 /* Extensions */,
 				F435E7D425F015C40083ABF2 /* WWCalendar */,
@@ -314,19 +324,6 @@
 				F435E7EC25F015C40083ABF2 /* SHSnackBarView */,
 			);
 			path = "Helper Classes";
-			sourceTree = "<group>";
-		};
-		F435E7B725F015C40083ABF2 /* RESideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				F435E7B825F015C40083ABF2 /* RESideMenu.h */,
-				F435E7B925F015C40083ABF2 /* UIViewController+RESideMenu.m */,
-				F435E7BA25F015C40083ABF2 /* RECommonFunctions.h */,
-				F435E7BB25F015C40083ABF2 /* RESideMenu.m */,
-				F435E7BC25F015C40083ABF2 /* UIViewController+RESideMenu.h */,
-				F435E7BD25F015C40083ABF2 /* RECommonFunctions.m */,
-			);
-			path = RESideMenu;
 			sourceTree = "<group>";
 		};
 		F435E7C325F015C40083ABF2 /* Extensions */ = {
@@ -529,6 +526,7 @@
 				F435E71C25F014320083ABF2 /* Main.storyboard in Resources */,
 				F435E82325F015C50083ABF2 /* mesmerize-bd.ttf in Resources */,
 				F435E82525F015C50083ABF2 /* mesmerize-lt.ttf in Resources */,
+				8840FFC125F37319008949CE /* RightMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,15 +695,17 @@
 				F435E81225F015C50083ABF2 /* DateHelper.swift in Sources */,
 				F435E82725F015C50083ABF2 /* AppPrefsManager.swift in Sources */,
 				F435E81C25F015C50083ABF2 /* ServiceManager.swift in Sources */,
+				8840FFC425F37319008949CE /* RightMenuVC.swift in Sources */,
 				F435E80A25F015C40083ABF2 /* UINavigationController+root.swift in Sources */,
 				F435E80625F015C40083ABF2 /* UIBezierPathExtension.swift in Sources */,
 				F435E81D25F015C50083ABF2 /* ZoomImageView.swift in Sources */,
-				F435E7FF25F015C40083ABF2 /* RECommonFunctions.m in Sources */,
 				F435E81A25F015C50083ABF2 /* String+Timepiece.swift in Sources */,
 				F435E80E25F015C40083ABF2 /* UIButton+.swift in Sources */,
 				F435E81825F015C50083ABF2 /* WWCalendarTimeSelector.swift in Sources */,
 				F435E80C25F015C40083ABF2 /* UILabel+.swift in Sources */,
+				8819758825F39FFF0095DE85 /* SelectPackageVC.swift in Sources */,
 				F435E80025F015C40083ABF2 /* String+Crypto.swift in Sources */,
+				8840FFC525F37319008949CE /* RightMenuCell.swift in Sources */,
 				F435E80525F015C40083ABF2 /* UIImage+Gif.swift in Sources */,
 				F435E81B25F015C50083ABF2 /* Duration.swift in Sources */,
 				F435E81425F015C50083ABF2 /* NSDateComponents+Timepiece.swift in Sources */,
@@ -733,8 +733,6 @@
 				F435E81F25F015C50083ABF2 /* Display+.swift in Sources */,
 				F435E80B25F015C40083ABF2 /* UIVIewController+.swift in Sources */,
 				F435E81625F015C50083ABF2 /* Int+Timepiece.swift in Sources */,
-				F435E7FE25F015C40083ABF2 /* RESideMenu.m in Sources */,
-				F435E7FD25F015C40083ABF2 /* UIViewController+RESideMenu.m in Sources */,
 				F435E82225F015C50083ABF2 /* Utility.swift in Sources */,
 				F4DF6FA125F09ABD00F6F50D /* LoginVC.swift in Sources */,
 			);

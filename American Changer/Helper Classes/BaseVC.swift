@@ -115,143 +115,109 @@ class BaseVC: UIViewController,MFMailComposeViewControllerDelegate {
     }
     
     // MARK: Navigation
-        func setNavigationBar(title : NSString? ,
-                              titleImage : UIImage?,
-                              leftImage : UIImage? ,
-                              rightImage : UIImage?,
-                              leftTitle : String?,
-                              rightTitle : String?,
-                              isLeft : Bool ,
-                              isRight : Bool,
-                              isLeftMenu : Bool ,
-                              isRightMenu : Bool ,
-                              bgColor : UIColor ,
-                              textColor : UIColor,
-                              isStatusBarSame: Bool,
-                              leftClick : @escaping LeftButton ,
-                              rightClick : @escaping RightButton)  {
-            
-            if isStatusBarSame {
-                if #available(iOS 13, *)
-                {
-                    let keyWindow = UIApplication.shared.connectedScenes
-                    .filter({$0.activationState == .foregroundActive})
-                    .map({$0 as? UIWindowScene})
-                    .compactMap({$0})
-                    .first?.windows
-                    .filter({$0.isKeyWindow}).first
-                    let statusBar = UIView(frame: keyWindow!.frame)
-                    statusBar.backgroundColor = bgColor
-                    keyWindow?.addSubview(statusBar)
-                }
-                else{
-                    UIApplication.shared.statusBarView?.backgroundColor = bgColor
-                }
-            }
-            
-            self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-            self.navigationController?.navigationBar.clipsToBounds = true
-            
-    //        Beizer path for curve navigation controller
-            if #available(iOS 11.0, *) {
-                self.navigationController?.navigationBar.layer.cornerRadius = 20
-                self.navigationController?.navigationBar.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-            } else {
-                let path = UIBezierPath(roundedRect: (self.navigationController?.navigationBar.bounds)!, byRoundingCorners: [.bottomLeft , .bottomRight], cornerRadii:CGSize(width: 20, height: 20))
-                let maskLayer = CAShapeLayer()
-                maskLayer.frame = (self.navigationController?.navigationBar.bounds)!
-                maskLayer.path = path.cgPath
-                self.navigationController?.navigationBar.layer.mask = maskLayer
-                self.navigationController?.navigationBar.layer.masksToBounds = true
-                // Fallback on earlier versions
-            }
-            
-            self.navigationItem.hidesBackButton = true
-            // Left Item
-            let btnLeft : UIButton = UIButton(type: .custom)
-            btnLeft.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-            btnLeft.imageView?.contentMode = .scaleAspectFit
-            let addImg = leftImage
-            if leftTitle != nil {
-                btnLeft.setTitle(leftTitle, for: .normal)
-                self.addConstaintsWithWidth(width: 50, height: 30, btn: btnLeft)
-            } else {
-                btnLeft.setImage(addImg, for: .normal)
-                self.addConstaintsWithWidth(width: 30, height: 30, btn: btnLeft)
-            }
-            btnLeft.sendActions(for: .touchUpInside)
-            let leftBarItem : UIBarButtonItem = UIBarButtonItem(customView: btnLeft)
-            if isLeft {
-                self.navigationItem.leftBarButtonItem = leftBarItem
-            }
-            if isLeftMenu {
-                btnLeft.addTarget(self, action: #selector(btnLeftMenuOpen(sender:)), for: .touchUpInside)
-            }
-            else
-            {
-                btnLeft.addAction {
-                    leftClick(btnLeft)
-                }
-            }
-            
-            // right item
-            let btnRight : UIButton = UIButton(type: .custom)
-            btnRight.frame = CGRect(x: self.view.frame.size.width, y: 0, width: 25, height: 25)
-            btnRight.imageView?.contentMode = .scaleAspectFit
-            let addImg1 = rightImage
-            if rightTitle != nil {
-                btnRight.frame = CGRect(x: self.view.frame.size.width, y: 0, width: 50, height: 30)
-                btnRight.titleLabel?.font = UIFont.systemFont(ofSize: 18.0)
-                btnRight.setTitleColor(UIColor.white, for: .normal)
-                btnRight.setTitle(rightTitle, for: .normal)
-            } else {
-                self.addConstaintsWithWidth(width: 30, height: 30, btn: btnRight)
-                btnRight.setImage(addImg1, for: .normal)
-            }
-            
-            btnRight.sendActions(for: .touchUpInside)
-            
-            let rightBarItem : UIBarButtonItem = UIBarButtonItem(customView: btnRight)
-            if isRight {
-                self.navigationItem.rightBarButtonItem = rightBarItem
-            }
-            if isRightMenu {
-                btnRight.addTarget(self, action: #selector(btnRightMenuOpen(sender:)), for: .touchUpInside)
-            }
-            else
-            {
-                btnRight.addAction {
-                    rightClick(btnRight)
-                }
-            }
-            
-            // title
-            if title == nil {
-                let imgViewTitle = UIImageView(frame: CGRect(x: self.view.frame.size.width/2-50, y: self.view.frame.size.height/2-40, width:20, height: 40.0)) as UIImageView
-                imgViewTitle.backgroundColor = UIColor.clear
-                imgViewTitle.contentMode = .scaleAspectFit
-                imgViewTitle.image = titleImage
-                self.navigationItem.titleView = imgViewTitle
-            } else {
-                let  lblNavigationTitleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 40.0)) as UILabel
-                lblNavigationTitleLabel.text = title! as String
-                lblNavigationTitleLabel.font = UIFont.boldSystemFont(ofSize: 18.0   )
-                lblNavigationTitleLabel.textColor = textColor
-                lblNavigationTitleLabel.textAlignment = .center
-                lblNavigationTitleLabel.frame = CGRect(x: 100, y: 0, width: 100, height: 100)
-                self.navigationItem.titleView = lblNavigationTitleLabel
-            }
-            
-            self.navigationController?.navigationBar.barTintColor = bgColor
-            self.navigationController?.navigationBar.isTranslucent = true
+    func setNavigationBar(title: NSString? ,
+                        titleImage: UIImage?,
+                        leftImage: UIImage? ,
+                        rightImage: UIImage?,
+                        leftTitle: String?,
+                        rightTitle: String?,
+                        isLeft: Bool ,
+                        isRight: Bool,
+                        isLeftMenu: Bool ,
+                        isRightMenu: Bool ,
+                        bgColor: UIColor ,
+                        textColor: UIColor,
+                        leftClick: @escaping LeftButton ,
+                        rightClick: @escaping RightButton)  {
+        
+        self.navigationItem.hidesBackButton = true
+        // Left Item
+        let btnLeft: UIButton = UIButton(type: .custom)
+        btnLeft.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        btnLeft.imageView?.contentMode = .scaleAspectFit
+        let addImg = leftImage
+        if leftTitle != nil {
+            btnLeft.setTitle(leftTitle, for: .normal)
+            self.addConstaintsWithWidth(width: 50, height: 30, btn: btnLeft)
+        } else {
+            btnLeft.setImage(addImg, for: .normal)
+            self.addConstaintsWithWidth(width: 45, height: 45, btn: btnLeft)
         }
+        btnLeft.sendActions(for: .touchUpInside)
+        let leftBarItem: UIBarButtonItem = UIBarButtonItem(customView: btnLeft)
+        if isLeft {
+            self.navigationItem.leftBarButtonItem = leftBarItem
+        }
+        if isLeftMenu {
+            btnLeft.addTarget(self, action: #selector(btnLeftMenuOpen(sender:)), for: .touchUpInside)
+        } else {
+            btnLeft.addAction {
+                leftClick(btnLeft)
+            }
+        }
+        // Right Item
+        let btnRight: UIButton = UIButton(type: .custom)
+        btnRight.frame = CGRect(x: self.view.frame.size.width, y: 0, width: 25, height: 25)
+        btnRight.imageView?.contentMode = .scaleAspectFit
+        let addImg1 = rightImage
+        if rightTitle != nil {
+            self.addConstaintsWithWidth(width: 70, height: 30, btn: btnRight)
+            btnRight.titleLabel?.font = UIFont.systemFont(ofSize: 18.0)
+            btnRight.titleLabel?.sizeToFit()
+            btnRight.setTitleColor(UIColor.white, for: .normal)
+            btnRight.setTitle(rightTitle, for: .normal)
+        } else {
+            self.addConstaintsWithWidth(width: 35, height: 35, btn: btnRight)
+            btnRight.setImage(addImg1, for: .normal)
+        }
+        btnRight.sendActions(for: .touchUpInside)
+        let rightBarItem: UIBarButtonItem = UIBarButtonItem(customView: btnRight)
+        if isRight {
+            self.navigationItem.rightBarButtonItem = rightBarItem
+        }
+        if isRightMenu {
+            btnRight.addTarget(self, action: #selector(btnRightMenuOpen(sender:)), for: .touchUpInside)
+        } else {
+            btnRight.addAction {
+                rightClick(btnRight)
+            }
+        }
+        // title
+        if title == nil {
+            let xRect: CGFloat = self.view.frame.size.width/2 - 50
+            let yRect: CGFloat = self.view.frame.size.height/2 - 40
+            let rectImgView: CGRect = CGRect(x: xRect, y: yRect, width: 100, height: 40.0)
+            let imgViewTitle = UIImageView(image: titleImage)
+            imgViewTitle.backgroundColor = UIColor.clear
+            imgViewTitle.contentMode = .scaleAspectFit
+            imgViewTitle.frame = rectImgView
+            self.navigationItem.titleView = imgViewTitle
+        } else {
+            let xRect: CGFloat = 0
+            let yRect: CGFloat = 0
+            let widthRect: CGFloat = self.view.frame.size.width
+            let heightRect: CGFloat = 40
+            let rectLabel: CGRect = CGRect(x: xRect, y: yRect, width: widthRect, height: heightRect)
+            let  lblNavigationTitleLabel = UILabel(frame: rectLabel) as UILabel
+            lblNavigationTitleLabel.text = title! as String
+            lblNavigationTitleLabel.font = UIFont(name: "kreon-regular", size: 20.0)
+            lblNavigationTitleLabel.textColor = textColor
+            lblNavigationTitleLabel.textAlignment = .center
+            lblNavigationTitleLabel.frame = CGRect(x: 100, y: 0, width: 100, height: 100)
+            self.navigationItem.titleView = lblNavigationTitleLabel
+        }
+        self.navigationController?.navigationBar.barTintColor = bgColor
+        self.navigationController?.navigationBar.isTranslucent = false
+        
+//        self.addCurvedNavigationBar(backgroundColor: bgColor, curveRadius: 15.0, shadowColor: UIColor.clear, shadowRadius: 2, heightOffset: 0) //swiftLint: disable control_statement
+    }
     
     @objc func btnLeftMenuOpen(sender: UIButton) {
-//        panel?.openLeft(animated: true)
+        
     }
 
     @objc func btnRightMenuOpen(sender: UIButton) {
-
+        panel?.openRight(animated: true)
     }
     
     func localToUTC(date:String) -> String {

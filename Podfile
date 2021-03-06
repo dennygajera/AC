@@ -12,6 +12,7 @@ target 'American Changer' do
     pod 'IQKeyboardManagerSwift'
     pod 'ReachabilitySwift'
     pod 'MBProgressHUD', '~> 1.1.0'
+    pod 'FAPanels'
     pod 'SDWebImage'
     pod 'IQKeyboardManagerSwift'
     pod 'EmptyStateKit'

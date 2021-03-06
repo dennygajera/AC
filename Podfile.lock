@@ -7,6 +7,7 @@ PODS:
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
   - EmptyStateKit (1.1.0)
+  - FAPanels (2.0.1)
   - GoogleSignIn (5.0.2):
     - AppAuth (~> 1.2)
     - GTMAppAuth (~> 1.0)
@@ -37,6 +38,7 @@ PODS:
 DEPENDENCIES:
   - ActionSheetPicker-3.0
   - EmptyStateKit
+  - FAPanels
   - GoogleSignIn
   - IQKeyboardManagerSwift
   - MBProgressHUD (~> 1.1.0)
@@ -52,6 +54,7 @@ SPEC REPOS:
     - Alamofire
     - AppAuth
     - EmptyStateKit
+    - FAPanels
     - GoogleSignIn
     - GTMAppAuth
     - GTMSessionFetcher
@@ -68,6 +71,7 @@ SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   EmptyStateKit: dc41e9ce5c6089f67a49d063bce73ade9f2ba73f
+  FAPanels: 050291ef601a1dc00fad888f83e74284cb86dd52
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GTMAppAuth: 197a8dabfea5d665224aa00d17f164fc2248dab9
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
@@ -79,6 +83,6 @@ SPEC CHECKSUMS:
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
 
-PODFILE CHECKSUM: a1dadeda829195c3ba3e866315dbf4ab0e6e4223
+PODFILE CHECKSUM: 2fd3bd3d9cc620b201e1389aa2955dd62f4dff49
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0
