@@ -9,6 +9,10 @@ import UIKit
 
 struct Package: Codable {
     let id: Int
-    let name, credit, price: String
+    var qty: Int = 1
+    var price: Int
+    var credit: Int
+    let name : String
     var isSelected: Bool = false
+    var priceQty: Int?
 }

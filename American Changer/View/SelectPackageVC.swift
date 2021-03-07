@@ -51,7 +51,12 @@ class SelectPackageVC: BaseVC {
     }
     
     @IBAction func btnShoppingCartClick(_ sender: Any) {
-        
+        let arrResult = self.viewModel.objPackages.filter { (singlePackage) -> Bool in
+            singlePackage.isSelected == true
+        }
+        let cart = Storyboard.main.storyboard().instantiateViewController(withIdentifier: Identifier.shoppingCart.rawValue) as! ShoppingCartVC
+        cart.objSelectedPackages = arrResult
+        self.navigationController?.pushViewController(cart, animated: true)
     }
     
     @IBAction func btnBackClick(_ sender: Any) {
@@ -89,9 +94,9 @@ extension SelectPackageVC : UITableViewDelegate, UITableViewDataSource {
             cell.viewCell.borderWidth = 2.0
             cell.viewCell.borderColor = UIColor(named: "ThemeColor")
         }
-        cell.lblAmount.text = singlePackage.price
+        cell.lblAmount.text = "\(singlePackage.price)"
         cell.lblPackageName.text = singlePackage.name
-        cell.lblCredit.text = singlePackage.credit
+        cell.lblCredit.text = "\(singlePackage.credit)"
 
         return cell
     }

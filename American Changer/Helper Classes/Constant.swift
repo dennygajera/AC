@@ -77,6 +77,8 @@ enum Identifier: String {
     case selectPackage = "SelectPackageVC"
     case packageTVC = "PackageTVC"
     case shoppingCart = "ShoppingCartVC"
+    case cartTVC = "CartTVC"
+    case cartTotalTVC = "CartTotalTVC"
     
     
     
