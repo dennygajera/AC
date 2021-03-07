@@ -138,7 +138,7 @@ class RightMenuVC: BaseVC {
     }
     
     private func viewConfigurations() {
-        tableView.register(UINib.init(nibName: Identifier.RightMenuCell.rawValue, bundle: nil), forCellReuseIdentifier: Identifier.RightMenuCell.rawValue)
+        tableView.register(UINib.init(nibName: Identifier.rightMenuCell.rawValue, bundle: nil), forCellReuseIdentifier: Identifier.rightMenuCell.rawValue)
     }
     
     //    func navigateToSendgift() {
@@ -160,7 +160,7 @@ extension RightMenuVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.RightMenuCell.rawValue) as! RightMenuCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.rightMenuCell.rawValue) as! RightMenuCell
         let dicSingleOption = arrData?.object(at: indexPath.row) as! [String: Any]
         cell.menuOption.text = dicSingleOption["title"] as? String
         return cell

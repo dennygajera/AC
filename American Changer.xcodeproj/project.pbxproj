@@ -14,6 +14,9 @@
 		8840FFC525F37319008949CE /* RightMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8840FFBF25F37319008949CE /* RightMenuCell.swift */; };
 		88A408D525F0CD810023A34D /* ForgotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A408D425F0CD810023A34D /* ForgotVC.swift */; };
 		88A408DA25F0CF9D0023A34D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A408D925F0CF9D0023A34D /* HomeVC.swift */; };
+		88ED4D8C25F48B2D0024A169 /* SelectPackageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED4D8B25F48B2D0024A169 /* SelectPackageViewModel.swift */; };
+		88ED4D9225F48C450024A169 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED4D9125F48C450024A169 /* Package.swift */; };
+		88ED4D9E25F49CCA0024A169 /* ShoppingCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED4D9D25F49CCA0024A169 /* ShoppingCartVC.swift */; };
 		C22AACFF1A5A5504510BEBD1 /* Pods_American_Changer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B5C761EB9105207D8CDC84 /* Pods_American_Changer.framework */; };
 		E2DD182A181451990FC959EC /* Pods_American_Changer_American_ChangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69092A823DD00C8B87D416C9 /* Pods_American_Changer_American_ChangerUITests.framework */; };
 		F435E71525F014320083ABF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E71425F014320083ABF2 /* AppDelegate.swift */; };
@@ -101,6 +104,9 @@
 		8840FFBF25F37319008949CE /* RightMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuCell.swift; sourceTree = "<group>"; };
 		88A408D425F0CD810023A34D /* ForgotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotVC.swift; sourceTree = "<group>"; };
 		88A408D925F0CF9D0023A34D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		88ED4D8B25F48B2D0024A169 /* SelectPackageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPackageViewModel.swift; sourceTree = "<group>"; };
+		88ED4D9125F48C450024A169 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		88ED4D9D25F49CCA0024A169 /* ShoppingCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartVC.swift; sourceTree = "<group>"; };
 		B0B5C761EB9105207D8CDC84 /* Pods_American_Changer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_American_Changer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B198CDED77F705F013CE81D0 /* Pods-American ChangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-American ChangerTests.release.xcconfig"; path = "Target Support Files/Pods-American ChangerTests/Pods-American ChangerTests.release.xcconfig"; sourceTree = "<group>"; };
 		F435E71125F014320083ABF2 /* American Changer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "American Changer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +212,14 @@
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
+		88ED4D9025F48C380024A169 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88ED4D9125F48C450024A169 /* Package.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		96B58616CD8DFDA26AE4F323 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +255,7 @@
 		F435E71325F014320083ABF2 /* American Changer */ = {
 			isa = PBXGroup;
 			children = (
+				88ED4D9025F48C380024A169 /* Model */,
 				F435E7A625F015C30083ABF2 /* Helper Classes */,
 				F435E7A525F0159C0083ABF2 /* View */,
 				F435E7A025F015840083ABF2 /* ViewModel */,
@@ -285,6 +300,7 @@
 			children = (
 				F4DF6FB825F0B37500F6F50D /* SignUpViewModel.swift */,
 				F4DF6FB325F0AE8000F6F50D /* LoginViewModel.swift */,
+				88ED4D8B25F48B2D0024A169 /* SelectPackageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -297,6 +313,7 @@
 				88A408D425F0CD810023A34D /* ForgotVC.swift */,
 				88A408D925F0CF9D0023A34D /* HomeVC.swift */,
 				8819758725F39FFF0095DE85 /* SelectPackageVC.swift */,
+				88ED4D9D25F49CCA0024A169 /* ShoppingCartVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -712,11 +729,13 @@
 				F435E81125F015C50083ABF2 /* Font+.swift in Sources */,
 				F435E80F25F015C40083ABF2 /* Gradient.+.swift in Sources */,
 				F435E80425F015C40083ABF2 /* CALayerExtension.swift in Sources */,
+				88ED4D9225F48C450024A169 /* Package.swift in Sources */,
 				F435E7FA25F015C40083ABF2 /* BaseVC.swift in Sources */,
 				F435E81025F015C50083ABF2 /* UITextField+.swift in Sources */,
 				F4DF6FB925F0B37500F6F50D /* SignUpViewModel.swift in Sources */,
 				F435E80925F015C40083ABF2 /* Appdelegate+.swift in Sources */,
 				F4DF6FB425F0AE8000F6F50D /* LoginViewModel.swift in Sources */,
+				88ED4D9E25F49CCA0024A169 /* ShoppingCartVC.swift in Sources */,
 				F435E71525F014320083ABF2 /* AppDelegate.swift in Sources */,
 				F435E81525F015C50083ABF2 /* NSCalendar+Timepiece.swift in Sources */,
 				F435E80825F015C40083ABF2 /* UIView+.swift in Sources */,
@@ -735,6 +754,7 @@
 				F435E81625F015C50083ABF2 /* Int+Timepiece.swift in Sources */,
 				F435E82225F015C50083ABF2 /* Utility.swift in Sources */,
 				F4DF6FA125F09ABD00F6F50D /* LoginVC.swift in Sources */,
+				88ED4D8C25F48B2D0024A169 /* SelectPackageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
