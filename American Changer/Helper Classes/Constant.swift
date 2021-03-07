@@ -79,6 +79,7 @@ enum Identifier: String {
     case shoppingCart = "ShoppingCartVC"
     case cartTVC = "CartTVC"
     case cartTotalTVC = "CartTotalTVC"
+    case payment = "PaymentVC"
     
     
     

@@ -14,5 +14,4 @@ struct Package: Codable {
     var credit: Int
     let name : String
     var isSelected: Bool = false
-    var priceQty: Int?
 }

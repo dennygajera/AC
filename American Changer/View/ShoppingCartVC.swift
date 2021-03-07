@@ -28,12 +28,17 @@ class ShoppingCartVC: UIViewController {
     @IBOutlet weak var tblView: UITableView!
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var btnProceedCheckout: UIButton!
+    @IBOutlet weak var btnProceedCheckoutBottom: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tblView.tableFooterView = UIView()
     }
     
     @IBAction func btnProceedCheckoutClick(_ sender: Any) {
-        
+        let payment = Storyboard.main.storyboard().instantiateViewController(withIdentifier: Identifier.payment.rawValue) as! PaymentVC
+        payment.objCartPackages = self.objSelectedPackages
+        self.navigationController?.pushViewController(payment, animated: true)
     }
     
     @IBAction func btnBackClick(_ sender: Any) {
@@ -43,7 +48,7 @@ class ShoppingCartVC: UIViewController {
     func getTotalPrice() -> String {
         var price = 0.0
         for singelPrice in objSelectedPackages! {
-            price = price + Double(singelPrice.price)
+            price = price + (Double(singelPrice.price) * Double(singelPrice.qty))
         }
         return "$\(price)"
     }
@@ -109,13 +114,11 @@ extension ShoppingCartVC: UITableViewDelegate, UITableViewDataSource {
     
     @objc func btnMinusClick(_ sender: UIButton) {
         self.objSelectedPackages![sender.tag].qty = self.objSelectedPackages![sender.tag].qty - 1
-        self.objSelectedPackages![sender.tag].priceQty = self.objSelectedPackages![sender.tag].price * self.objSelectedPackages![sender.tag].qty
         self.tblView.reloadData()
     }
     
     @objc func btnPlusClick(_ sender: UIButton) {
         self.objSelectedPackages![sender.tag].qty = self.objSelectedPackages![sender.tag].qty + 1
-        self.objSelectedPackages![sender.tag].priceQty = self.objSelectedPackages![sender.tag].price * self.objSelectedPackages![sender.tag].qty
         self.tblView.reloadData()
     }
 }

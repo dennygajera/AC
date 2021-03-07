@@ -12,6 +12,7 @@
 		8840FFC125F37319008949CE /* RightMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8840FFBB25F37319008949CE /* RightMenuCell.xib */; };
 		8840FFC425F37319008949CE /* RightMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8840FFBE25F37319008949CE /* RightMenuVC.swift */; };
 		8840FFC525F37319008949CE /* RightMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8840FFBF25F37319008949CE /* RightMenuCell.swift */; };
+		88487F6525F4C9D20050CAA3 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88487F6425F4C9D20050CAA3 /* PaymentVC.swift */; };
 		88A408D525F0CD810023A34D /* ForgotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A408D425F0CD810023A34D /* ForgotVC.swift */; };
 		88A408DA25F0CF9D0023A34D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A408D925F0CF9D0023A34D /* HomeVC.swift */; };
 		88B723CB25F4A5F2002EA7F5 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B723CA25F4A5F2002EA7F5 /* CartViewModel.swift */; };
@@ -103,6 +104,7 @@
 		8840FFBB25F37319008949CE /* RightMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightMenuCell.xib; sourceTree = "<group>"; };
 		8840FFBE25F37319008949CE /* RightMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuVC.swift; sourceTree = "<group>"; };
 		8840FFBF25F37319008949CE /* RightMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuCell.swift; sourceTree = "<group>"; };
+		88487F6425F4C9D20050CAA3 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
 		88A408D425F0CD810023A34D /* ForgotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotVC.swift; sourceTree = "<group>"; };
 		88A408D925F0CF9D0023A34D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		88B723CA25F4A5F2002EA7F5 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				88A408D925F0CF9D0023A34D /* HomeVC.swift */,
 				8819758725F39FFF0095DE85 /* SelectPackageVC.swift */,
 				88ED4D9D25F49CCA0024A169 /* ShoppingCartVC.swift */,
+				88487F6425F4C9D20050CAA3 /* PaymentVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -737,6 +740,7 @@
 				F435E7FA25F015C40083ABF2 /* BaseVC.swift in Sources */,
 				F435E81025F015C50083ABF2 /* UITextField+.swift in Sources */,
 				F4DF6FB925F0B37500F6F50D /* SignUpViewModel.swift in Sources */,
+				88487F6525F4C9D20050CAA3 /* PaymentVC.swift in Sources */,
 				F435E80925F015C40083ABF2 /* Appdelegate+.swift in Sources */,
 				F4DF6FB425F0AE8000F6F50D /* LoginViewModel.swift in Sources */,
 				88ED4D9E25F49CCA0024A169 /* ShoppingCartVC.swift in Sources */,

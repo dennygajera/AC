@@ -248,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="35"/>
+            <point key="canvasLocation" x="996" y="-8"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="QoN-j1-nAF">
@@ -623,7 +623,7 @@ Shows</string>
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFP-rL-GsB">
-                                <rect key="frame" x="35" y="86" width="58" height="21"/>
+                                <rect key="frame" x="35" y="86" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="2"/>
@@ -638,7 +638,7 @@ Shows</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXc-X7-csd">
-                                <rect key="frame" x="137" y="79" width="148" height="35"/>
+                                <rect key="frame" x="147" y="79" width="138" height="35"/>
                                 <color key="backgroundColor" name="col_disable"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="oh4-Jv-2CU"/>
@@ -692,7 +692,7 @@ Shows</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XtC-U6-AYd">
-                                <rect key="frame" x="35" y="75" width="250" height="458"/>
+                                <rect key="frame" x="35" y="75" width="250" height="423"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartTVC" rowHeight="123" id="gsZ-V6-IXt" customClass="CartTVC" customModule="American_Changer" customModuleProvider="target">
@@ -894,7 +894,7 @@ Shows</string>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="setScalable" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
-                                        <real key="value" value="5"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -917,6 +917,27 @@ Shows</string>
                                     <action selector="btnBackClick:" destination="wTZ-re-c0C" eventType="touchUpInside" id="vjg-bm-OZg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh2-w4-KSc">
+                                <rect key="frame" x="63.5" y="513" width="193" height="35"/>
+                                <color key="backgroundColor" name="ThemeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="6BZ-sH-SpT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="  Proceed to Checkout  " image="icoRightArrowWhite">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setScalable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnProceedCheckoutClick:" destination="OyH-Ie-E2L" eventType="touchUpInside" id="Hz8-T8-jbb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ra9-7w-ZiC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -924,22 +945,99 @@ Shows</string>
                             <constraint firstItem="Jo5-tz-Arv" firstAttribute="centerY" secondItem="BRy-St-Ut6" secondAttribute="centerY" id="1tH-m2-fLE"/>
                             <constraint firstItem="Jo5-tz-Arv" firstAttribute="leading" secondItem="Ra9-7w-ZiC" secondAttribute="leading" constant="35" id="1ws-9R-owY"/>
                             <constraint firstItem="Ra9-7w-ZiC" firstAttribute="trailing" secondItem="XtC-U6-AYd" secondAttribute="trailing" constant="35" id="6lW-yK-lJO"/>
+                            <constraint firstItem="Wh2-w4-KSc" firstAttribute="centerX" secondItem="ZOg-zN-aQl" secondAttribute="centerX" id="8Pe-b7-E1U"/>
                             <constraint firstItem="XtC-U6-AYd" firstAttribute="top" secondItem="BRy-St-Ut6" secondAttribute="bottom" constant="5" id="Cbq-hE-poW"/>
                             <constraint firstItem="BRy-St-Ut6" firstAttribute="top" secondItem="Ra9-7w-ZiC" secondAttribute="top" constant="35" id="GWn-ze-XEq"/>
                             <constraint firstItem="XtC-U6-AYd" firstAttribute="leading" secondItem="Ra9-7w-ZiC" secondAttribute="leading" constant="35" id="LFL-H4-41b"/>
+                            <constraint firstItem="Wh2-w4-KSc" firstAttribute="top" secondItem="XtC-U6-AYd" secondAttribute="bottom" constant="15" id="Prh-rt-YWv"/>
                             <constraint firstItem="Ra9-7w-ZiC" firstAttribute="trailing" secondItem="BRy-St-Ut6" secondAttribute="trailing" constant="35" id="QbR-pi-Q3c"/>
-                            <constraint firstItem="Ra9-7w-ZiC" firstAttribute="bottom" secondItem="XtC-U6-AYd" secondAttribute="bottom" constant="35" id="RPo-tQ-0Oo"/>
+                            <constraint firstItem="Ra9-7w-ZiC" firstAttribute="bottom" secondItem="Wh2-w4-KSc" secondAttribute="bottom" constant="20" id="ZgH-SQ-4va"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnBack" destination="Jo5-tz-Arv" id="W0i-zn-TDj"/>
                         <outlet property="btnProceedCheckout" destination="BRy-St-Ut6" id="z6N-KW-VcT"/>
+                        <outlet property="btnProceedCheckoutBottom" destination="Wh2-w4-KSc" id="tps-BV-0pH"/>
                         <outlet property="tblView" destination="XtC-U6-AYd" id="ga7-mR-JTE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Rg-nP-wiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3187.5" y="825"/>
+            <point key="canvasLocation" x="3206" y="825"/>
+        </scene>
+        <!--PaymentVC-->
+        <scene sceneID="SZx-cZ-sne">
+            <objects>
+                <viewController storyboardIdentifier="PaymentVC" id="oja-cv-0mA" customClass="PaymentVC" customModule="American_Changer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N7K-ib-QPi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Oa-hO-6DJ">
+                                <rect key="frame" x="155" y="35" width="130" height="35"/>
+                                <color key="backgroundColor" name="ThemeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="aO0-Xh-1ej"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="  Review Order  " image="icoRightArrowWhite">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setScalable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnReviewOrderClick:" destination="oja-cv-0mA" eventType="touchUpInside" id="Ybc-W9-gp5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDY-Wk-AUe">
+                                <rect key="frame" x="35" y="42" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="2"/>
+                                <state key="normal" title="Back" image="icoLeftArrow">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setScalable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBackClick:" destination="oja-cv-0mA" eventType="touchUpInside" id="Jjk-zt-gUD"/>
+                                    <action selector="btnBackClick:" destination="wTZ-re-c0C" eventType="touchUpInside" id="zM7-qI-Uu5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL1-Yg-X92">
+                                <rect key="frame" x="35" y="90" width="250" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KaT-DZ-TMC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KaT-DZ-TMC" firstAttribute="trailing" secondItem="3Oa-hO-6DJ" secondAttribute="trailing" constant="35" id="2L5-wK-7Sn"/>
+                            <constraint firstItem="KaT-DZ-TMC" firstAttribute="trailing" secondItem="GL1-Yg-X92" secondAttribute="trailing" constant="35" id="3cu-MD-bAw"/>
+                            <constraint firstItem="cDY-Wk-AUe" firstAttribute="leading" secondItem="KaT-DZ-TMC" secondAttribute="leading" constant="35" id="Nxq-Gi-pZJ"/>
+                            <constraint firstItem="GL1-Yg-X92" firstAttribute="top" secondItem="3Oa-hO-6DJ" secondAttribute="bottom" constant="20" id="S9q-Ip-Ehb"/>
+                            <constraint firstItem="3Oa-hO-6DJ" firstAttribute="top" secondItem="KaT-DZ-TMC" secondAttribute="top" constant="35" id="cwD-81-cKY"/>
+                            <constraint firstItem="GL1-Yg-X92" firstAttribute="leading" secondItem="KaT-DZ-TMC" secondAttribute="leading" constant="35" id="lFO-HU-07i"/>
+                            <constraint firstItem="cDY-Wk-AUe" firstAttribute="centerY" secondItem="3Oa-hO-6DJ" secondAttribute="centerY" id="ouh-0U-v7x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBack" destination="cDY-Wk-AUe" id="2dZ-oO-FlB"/>
+                        <outlet property="btnReviewOrder" destination="3Oa-hO-6DJ" id="hvP-Lz-sJX"/>
+                        <outlet property="lblTotalToPay" destination="GL1-Yg-X92" id="35I-Sa-bcd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGv-H6-01N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3847.5" y="825"/>
         </scene>
         <!--ForgotVC-->
         <scene sceneID="u8A-9G-dfn">
