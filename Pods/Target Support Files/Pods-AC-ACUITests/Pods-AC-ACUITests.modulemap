@@ -1,0 +1,6 @@
+framework module Pods_AC_ACUITests {
+  umbrella header "Pods-AC-ACUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
